@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parsed Data</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Parsed Credit Card Statement</h1>
+    <div class="card p-4 shadow-lg">
+      <ul class="list-group">
+        <li class="list-group-item"><strong>Card Variant:</strong> {{ data.card_variant }}</li>
+        <li class="list-group-item"><strong>Last 4 Digits:</strong> {{ data.last_4_digits }}</li>
+        <li class="list-group-item"><strong>Billing Cycle:</strong> {{ data.billing_cycle }}</li>
+        <li class="list-group-item"><strong>Payment Due Date:</strong> {{ data.due_date }}</li>
+        <li class="list-group-item"><strong>Total Balance:</strong> {{ data.total_balance }}</li>
+      </ul>
+      <a href="/" class="btn btn-secondary mt-3 w-100">Upload Another PDF</a>
+    </div>
+  </div>
+</body>
+</html>
